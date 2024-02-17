@@ -1,0 +1,122 @@
+{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+font family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    background-image: url(./img/Bombeiros\ apagando\ fogo.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center center  ;
+    background-size: cover;
+    
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px 45px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+section h2{
+    padding: 10px;
+color: red;
+font-size: 2rem;
+margin: 1rem;
+position: relative;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form label{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+form input {
+    padding: 15px;
+    --outline: none;
+    --border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input{
+    border-radius: 16px;
+}
+form textarea{
+   padding: 10px;
+    --outline: none;
+    --border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px; 
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: #ff4845;
+    border: solid #f3ffcf;
+    color: #f3ffcf;
+    transition: 1s;
+    margin-bottom: 20px;
+    
+}
+
+form button:hover{
+
+    background-color: chartreuse;
+    color: #f3ffcf;
+    border-radius: 16px;
+}
+
+/*PAGINA DE OBRIGADO*/
+
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ff4845;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #f3ffcf;
+    margin-bottom: 30px;
+
+}
+
+.paragrafo{
+    font-size: 45px;
+    color: #f3ffcf;
+    margin-bottom: 30px;
+}
+
+.btn{
+    padding: 15px 55px;
+    background-color: #f3ffcf;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-radius: 16px;
+}
