@@ -1,0 +1,50 @@
+{
+    "packages": [
+        {
+            "name": "nopjmp/discord-webhooks",
+            "version": "0.3.1",
+            "version_normalized": "0.3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nopjmp/discord-webhooks.git",
+                "reference": "79a923abebb0b764d8592605fe26750fb7dc9a46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nopjmp/discord-webhooks/zipball/79a923abebb0b764d8592605fe26750fb7dc9a46",
+                "reference": "79a923abebb0b764d8592605fe26750fb7dc9a46",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4"
+            },
+            "time": "2018-04-27T04:13:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "DiscordWebhooks\\": "DiscordWebhooks/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kayla Thompson",
+                    "email": "jmp@const.ninja"
+                }
+            ],
+            "description": "A simple Discord webhook client library.",
+            "support": {
+                "issues": "https://github.com/nopjmp/discord-webhooks/issues",
+                "source": "https://github.com/nopjmp/discord-webhooks/tree/master"
+            },
+            "install-path": "../nopjmp/discord-webhooks"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
