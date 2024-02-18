@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
+    <script>
+        function checkInput(event) {
+          const input = event.target;
+          const value = input.value;
+  
+          // Verifica se o valor é um número
+          if (isNaN(value)) {
+            // Se não for um número, remove os caracteres inválidos
+            input.value = value.replace(/[^0-9]/g, "");
+          }
+        }
+      </script>
 </head>
 <body>
     <section>
@@ -20,7 +32,7 @@
         <label>Nome</label>
         <input type="text" nome="name" placeholder="Digite Seu Nome do Discord" autocomplete="off" required maxlength="18">
         <label>ID</label>
-        <input type="ID" nome="ID" pattern="[0-9]{0-10}" placeholder="Digite Seu Passaporte" autocomplete="off" required>
+        <input type="ID" nome="ID"oninput="checkInput(event);" placeholder="Digite Seu Passaporte" autocomplete="off" required>
         <label>Data da Ocorrencia</label>
         <input type="date" nome="Data" placeholder="Digite a data do acontecido" autocomplete="off" required>
         <input type="file" name="file">
@@ -29,7 +41,7 @@
         <label>Descrição</label>
         <textarea name="message" cols="30" rows="10" placeholder="Descreva o Ocorrido" required></textarea>
         <button type="submit">Enviar</button>
-        <input type="hidden" name="redirectTo" value="file:///C:/Users/Usuario/Desktop/Novo%20projeto/Registrada.html" > 
+        
         
     </section>
     <div class="logo">
