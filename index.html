@@ -28,7 +28,7 @@
             
             
         </h2>
-        <form action="./Registrada.html" method="post" enctype="multipart/form-data">
+        <form action="./Registrada.html" method="post">
         <label>Nome</label>
         <input type="text" nome="name" placeholder="Digite Seu Nome do Discord" autocomplete="off" required maxlength="18">
         <label>ID</label>
@@ -41,7 +41,7 @@
         <label>Descrição</label>
         <textarea name="message" cols="30" rows="10" placeholder="Descreva o Ocorrido" required></textarea>
         <button type="submit">Enviar</button>
-        
+        <input type="hidden" name="redirectTo" value="https://bmbspace.github.io/bmb-space/Registrada.html">
         
     </section>
     <div class="logo">
