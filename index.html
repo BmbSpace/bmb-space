@@ -28,20 +28,20 @@
             
             
         </h2>
-        <form action="./Registrado.html" method="post">
+        <form action="./discordhook.php" method="post" enctype="multipart/form-data">
         <label>Nome</label>
-        <input type="text" nome="name" placeholder="Digite Seu Nome do Discord" autocomplete="off" required maxlength="18">
+        <input type="text" name="nome" placeholder="Digite Seu Nome do Discord" autocomplete="off" required maxlength="18" />
         <label>ID</label>
-        <input type="ID" nome="ID"oninput="checkInput(event);" placeholder="Digite Seu Passaporte" autocomplete="off" required>
+        <input type="ID" name="ID" oninput="checkInput(event);" placeholder="Digite Seu Passaporte" autocomplete="off" required />
         <label>Data da Ocorrencia</label>
-        <input type="date" nome="Data" placeholder="Digite a data do acontecido" autocomplete="off" required>
-        <input type="file" name="file">
+        <input type="date" name="Data" placeholder="Digite a data do acontecido" autocomplete="off" required />
+        <input type="file" name="arquivo" id="arquivo" />
         <label>URL</label>
-        <input type="URL" nome="URL" placeholder="Caso seu arquivo seja extenso, cole o link" autocomplete="off" required>
+        <input type="URL" name="URL" placeholder="Caso seu arquivo seja extenso, cole o link" autocomplete="off" required />
         <label>Descrição</label>
         <textarea name="message" cols="30" rows="10" placeholder="Descreva o Ocorrido" required></textarea>
         <button type="submit">Enviar</button>
-                
+        </form>
     </section>
     <div class="logo">
         <img src="./img/logo.png"
