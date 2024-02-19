@@ -5,6 +5,8 @@ use GuzzleHttp\Client;
 
 $webhookUrl = 'https://discord.com/api/webhooks/1208135966540308550/-0E80keDl9SWdmhsKSw6d251-ZncE41eGCo1vm67_zixnX--NBd-ce_ipzK5JlC9RuhD';
 
+$cargoId = ["1158901413133434990","1172564178544885770"]; // Insira o ID do cargo aqui
+
 if (isset($_POST)) {
     $nome = $_POST['nome'];
     $ID = filter_input(INPUT_POST, 'ID');
@@ -13,7 +15,14 @@ if (isset($_POST)) {
     $descricao = filter_input(INPUT_POST, 'message');
     $file = $_FILES['arquivo'];
 
+    
+
     $client = new Client();
+
+    if ($file['error'] !== UPLOAD_ERR_OK) {
+        // O upload do arquivo falhou, exiba uma mensagem de erro
+        die('Erro ao enviar o arquivo');
+    }
 
     $response = $client->request('POST', $webhookUrl, [
         'multipart' => [
@@ -26,7 +35,7 @@ if (isset($_POST)) {
                                 "ID: {$ID}\n" .
                                 "Data: " . date('d/m/y', strtotime($data)) . "\n" .
                                 "URL: {$url}\n" .
-                                "Descrição: {$descricao}",
+                                "Descrição: {$descricao}\n<@&{$cargoId[0]}> <@&{$cargoId[1]}>",
                     'embeds' => [
                         [
                             'title' => 'Imagem em anexo',
@@ -34,6 +43,9 @@ if (isset($_POST)) {
                                 'url' => 'attachment://arquivo'
                             ]
                         ]
+                    ],
+                    'allowed_mentions' => [
+                        'parse' => ['roles']
                     ]
                 ])
             ],
