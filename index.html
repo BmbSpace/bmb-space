@@ -15,39 +15,57 @@
             // Se não for um número, remove os caracteres inválidos
             input.value = value.replace(/[^0-9]/g, "");
           }
-        }
+        } 
+        
       </script>
 </head>
 <body>
     <section>
-        <h2>
-            <img src="./img/logo bmb.png"
-            width="100px">
-
-            CORREGEDORIA             
-            
-            
+        <h2 style="text-align: center;">
+          <img src="./img/logo bmb.png"
+          width="100px">
+        <div id="title">
+          CORREGEDORIA <br>
+          BOMBEIROS SPACERP 
+        </div>         
         </h2>
-        <form action="./discordhook.php" method="post" enctype="multipart/form-data">
-        <label>Nome</label>
-        <input type="text" name="nome" placeholder="Digite Seu Nome do Discord" autocomplete="off" required maxlength="18" />
-        <label>ID</label>
-        <input type="ID" name="ID" oninput="checkInput(event);" placeholder="Digite Seu Passaporte" autocomplete="off" required />
-        <label>Data da Ocorrencia</label>
-        <input type="date" name="Data" placeholder="Digite a data do acontecido" autocomplete="off" required />
-        <input type="file" name="arquivo" id="arquivo" />
-        <label>URL</label>
-        <input type="URL" name="URL" placeholder="Caso seu arquivo seja extenso, cole o link" autocomplete="off" />
-        <label>Descrição</label>
-        <textarea name="message" cols="30" rows="10" placeholder="Descreva o Ocorrido" required></textarea>
-        <button type="submit">Enviar</button>
+        <form id="denunciaForm" action="confirm.html" method="post" enctype="multipart/form-data">
+          <label for="nome">
+            <b>Nome na Cidade:</b>
+          </label>
+          <input type="text" id="nome" name="nome" required/>
+          <br>
+          <label for="identificador">
+          <b>ID:</b>
+          </label>
+          <input type="text" id="identificador" name="identificador" required/>
+          <br>
+          <label for="data">
+          <b>Data do Ocorrido:</b>
+        </label>
+          <input type="Date" id="data" name="data" required/>
+          <br>
+          <label for="url">
+          <b>URL</b>
+          </label>
+          <input type="url" id="url” name= "url" required/>
+          <br>
+          <label for="descricao">
+            <B>Descrição</B>
+          </1abel>
+          <br>
+          <textarea id= "descricao” name="descricao” rows="4" cols="50" required></textarea>
+          <br>
+          <button type="submit">Enviar</button>
         </form>
     </section>
     <div class="logo">
-        <img src="./img/logo.png"
-        width="300px"
+      <img src="./img/logo.png " alt="A moving logo image" class="moving-image"
+      width="200px"
+      style="margin-left: 100px;"
         
         >
     </div>
+    <script src="webhook.js"></script>
 </body>
 </html>

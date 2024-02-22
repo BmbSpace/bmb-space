@@ -1,15 +1,10 @@
-{
-margin: 0;
-padding:0;
-box-sizing: border-box;
-font family: sans-serif;
-}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 10vh;
-    background-image: url(./img/Bombeiros\ apagando\ fogo.png.jpg);
+    background-image: url(./img/img_640x426$2017_03_17_22_29_00_212899.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -26,13 +21,14 @@ section{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 /*Tamanho do nome Corregedoria*/
-section h2{
-    padding: 0px;
-color: red;
-font-size: 2rem;
-margin: 1rem;
-position: relative;
-}
+   div#title{
+        padding: 0px;
+    color: #f3ffcf;
+    font-size: 2rem;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    }
 /*Tamanho da Caixaixinha para Digitar*/
 section form{
     display: flex;
@@ -61,7 +57,7 @@ form textarea{
    padding: 10px;
     --outline: none;
     --border: 0;
-    font-size: 15px;
+    font-size: 10px;
     margin-bottom: 30px;
     transition: all 0.5s;
 }
@@ -71,12 +67,14 @@ form textarea:focus{
 form button{
     padding: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 20px;
     background-color: #ff4845;
     border: solid #f3ffcf;
     color: #f3ffcf;
     transition: 1s;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
     
 }
 
