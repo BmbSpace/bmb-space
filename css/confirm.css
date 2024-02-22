@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../img/img_640x426$2017_03_17_22_29_00_212899.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#box_dialog{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 350px;
+    box-shadow: 1px 1px 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+div#button button{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+    background: none;
+    border:2px solid red;
+    border-radius: 5px;
+    width: 180px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+div#button button:hover{
+    width: 200px;
+    background: red;
+    color:white;
+}
